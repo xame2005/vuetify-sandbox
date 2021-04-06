@@ -1,28 +1,52 @@
 <template>
-  <v-container>
-    <v-layout wrap>
-      <v-flex class="primary" xs12>
-        <h1>12</h1>
+  <v-container grid-list-md>
+    <v-layout row wrap>
+      <v-flex xs12 sm6>
+        <v-card>
+          <v-img
+            src="https://cdn.pixabay.com/photo/2020/07/12/07/47/bee-5396362_1280.jpg"
+          >
+            <v-container fill-height>
+              <v-layout row wrap>
+                <v-flex>
+                  <span class="headline white--text">Lorem, ipsum dolor.</span>
+                </v-flex>
+              </v-layout>
+            </v-container>
+          </v-img>
+          <v-card-title><h2>Lorem, ipsum dolor.</h2></v-card-title>
+          <v-card-text
+            ><p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
+              harum similique! Velit nostrum possimus commodi itaque
+              necessitatibus, perspiciatis explicabo unde incidunt quo quae
+              harum expedita quibusdam pariatur aperiam blanditiis quia.
+            </p></v-card-text
+          >
+          <v-card-actions>
+            <v-btn color="info flat">text</v-btn></v-card-actions
+          >
+        </v-card>
       </v-flex>
-      <v-flex class="secondary" xs6>
-        <h1>6</h1>
-      </v-flex>
-      <v-flex class="error" xs6>
-        <h1>6</h1>
-      </v-flex>
-    </v-layout>
-
-    <v-layout mt-5 justify-center align-center secondary style="height: 300px">
-      <v-flex class="info" xs3><h1>Centrado</h1></v-flex>
-      <v-flex class="pink lighten-1 white--text" xs3><h1>Centrado</h1></v-flex>
-    </v-layout>
-
-    <v-layout>
-      <v-flex>
-        <h1 class="display-1 text-uppercase">Lorem, ipsum dolor.</h1>
-        <h1 class="display-2 primary pa-4 mt-5">Lorem, ipsum dolor.</h1>
-        <h1 class="display-3 text-xs-center">Lorem, ipsum dolor.</h1>
-        <h1 class="display-4">Lorem, ipsum dolor.</h1>
+      <v-flex xs12 sm6>
+        <v-card>
+          <v-img
+            src="https://cdn.pixabay.com/photo/2020/07/12/07/47/bee-5396362_1280.jpg"
+          >
+          </v-img>
+          <v-card-title><h2>Lorem, ipsum dolor.</h2></v-card-title>
+          <v-card-text
+            ><p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
+              harum similique! Velit nostrum possimus commodi itaque
+              necessitatibus, perspiciatis explicabo unde incidunt quo quae
+              harum expedita quibusdam pariatur aperiam blanditiis quia.
+            </p></v-card-text
+          >
+          <v-card-actions>
+            <v-btn color="info flat">text</v-btn></v-card-actions
+          >
+        </v-card>
       </v-flex>
     </v-layout>
   </v-container>
