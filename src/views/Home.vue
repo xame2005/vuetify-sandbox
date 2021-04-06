@@ -44,16 +44,41 @@
             </p></v-card-text
           >
           <v-card-actions>
-            <v-btn color="info flat">text</v-btn></v-card-actions
+            <v-btn color="info flat" @click="dialog = !dialog"
+              >text</v-btn
+            ></v-card-actions
           >
         </v-card>
       </v-flex>
     </v-layout>
+    <v-dialog v-model="dialog" width="500" persistent>
+      <v-card>
+        <v-card-title> <h2>Título</h2></v-card-title>
+        <v-card-text>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+            sapiente alias inventore officiis minima delectus numquam esse
+            consequatur adipisci quas tempora ab exercitationem consequuntur
+            doloribus nobis natus labore, perspiciatis aut?
+          </p></v-card-text
+        >
+        <v-divider></v-divider>
+        <v-card-actions>
+          <v-btn @click="dialog = false">Cerrar</v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
   </v-container>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      dialog: false,
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped></style>
