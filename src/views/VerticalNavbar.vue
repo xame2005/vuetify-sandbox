@@ -22,6 +22,14 @@
           <p class="white--text mt-3 headline">Juanito Perez</p>
         </v-flex>
       </v-layout>
+      <v-layout column>
+        <v-flex mx-3 my-3>
+          <v-btn color="success" class="mb-3" block :to="{ name: 'Home' }"
+            >Home</v-btn
+          >
+          <v-btn color="success" block :to="{ name: 'to-do' }">ToDo List</v-btn>
+        </v-flex>
+      </v-layout>
     </v-navigation-drawer>
   </div>
 </template>

@@ -30,6 +30,11 @@ const routes = [
     name: "grid",
     component: () => import(/*WebpackChunkName: "about" */ "@/views/Grid.vue"),
   },
+  {
+    path: "/to-do",
+    name: "to-do",
+    component: () => import(/*WebpackChunkName: "to-do" */ "@/views/ToDo.vue"),
+  },
 ];
 
 const router = new VueRouter({
